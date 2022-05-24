@@ -36,17 +36,40 @@ export class CubeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     // Object
-    const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-    cubeGeometry.rotateY(20);
-    const cubeMaterial = new THREE.MeshBasicMaterial({
-      color: '#ff2000',
-    });
-    const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    this.scene.add(cubeMesh);
+    const group = new THREE.Group();
+    this.scene.add(group);
+
+    const cube1 = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ color: 0xff0000 }),
+    );
+
+    const cube2 = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
+    );
+    cube2.position.x = -2;
+
+    const cube3 = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ color: 0x0000ff }),
+    );
+    cube3.position.x = 2;
+
+    group.scale.y = 0.8;
+    group.rotation.y = 1;
+    group.add(cube1, cube2, cube3);
+
+    // Axes Helper
+    const axesHelper = new THREE.AxesHelper(2);
+    this.scene.add(axesHelper);
 
     // Camera
-    this.camera.position.z = 3;
+    this.camera.position.z = 5;
     this.scene.add(this.camera);
+
+    // this.camera.lookAt(new THREE.Vector3(3.0,0))
+    // this.camera.lookAt(cube1.position);
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({
