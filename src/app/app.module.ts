@@ -7,6 +7,7 @@ import { BarComponent } from './components/bar/bar.component';
 import { PieComponent } from './components/pie/pie.component';
 import { ScatterComponent } from './components/scatter/scatter.component';
 import { CubeComponent } from './components/cube/cube.component';
+import { GsapAnimationComponent } from './components/gsap-animation/gsap-animation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CubeComponent } from './components/cube/cube.component';
     BarComponent,
     PieComponent,
     ScatterComponent,
-    CubeComponent
+    CubeComponent,
+    GsapAnimationComponent
   ],
   imports: [
     BrowserModule,
