@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BarComponent } from './components/bar/bar.component';
-import { PieComponent } from './components/pie/pie.component';
-import { ScatterComponent } from './components/scatter/scatter.component';
-import { CubeComponent } from './components/cube/cube.component';
-import { GsapAnimationComponent } from './components/gsap-animation/gsap-animation.component';
+import { BarComponent } from './d3/bar/bar.component';
+import { PieComponent } from './d3/pie/pie.component';
+import { ScatterComponent } from './d3/scatter/scatter.component';
+import { CubeComponent } from './threejsBasic/cube/cube.component';
+import { GsapAnimationComponent } from './threejsBasic/gsap-animation/gsap-animation.component';
+import { CameraComponent } from './threejsBasic/camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GsapAnimationComponent } from './components/gsap-animation/gsap-animati
     PieComponent,
     ScatterComponent,
     CubeComponent,
-    GsapAnimationComponent
+    GsapAnimationComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,
