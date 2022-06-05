@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
-    <header>
+    <!-- <header>
       <h1>Angular + Three js</h1>
-    </header>
+    </header> -->
     <app-camera></app-camera> 
   `,
   styles: [],
