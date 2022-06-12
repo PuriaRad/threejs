@@ -9,6 +9,7 @@ import { ScatterComponent } from './d3/scatter/scatter.component';
 import { CubeComponent } from './threejsBasic/cube/cube.component';
 import { GsapAnimationComponent } from './threejsBasic/gsap-animation/gsap-animation.component';
 import { CameraComponent } from './threejsBasic/camera/camera.component';
+import { FullscreenAndResizingComponent } from './threejsBasic/fullscreen-and-resizing/fullscreen-and-resizing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CameraComponent } from './threejsBasic/camera/camera.component';
     ScatterComponent,
     CubeComponent,
     GsapAnimationComponent,
-    CameraComponent
+    CameraComponent,
+    FullscreenAndResizingComponent
   ],
   imports: [
     BrowserModule,
