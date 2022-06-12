@@ -10,6 +10,7 @@ import { CubeComponent } from './threejsBasic/cube/cube.component';
 import { GsapAnimationComponent } from './threejsBasic/gsap-animation/gsap-animation.component';
 import { CameraComponent } from './threejsBasic/camera/camera.component';
 import { FullscreenAndResizingComponent } from './threejsBasic/fullscreen-and-resizing/fullscreen-and-resizing.component';
+import { GeometriesComponent } from './threejsBasic/geometries/geometries.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FullscreenAndResizingComponent } from './threejsBasic/fullscreen-and-re
     CubeComponent,
     GsapAnimationComponent,
     CameraComponent,
-    FullscreenAndResizingComponent
+    FullscreenAndResizingComponent,
+    GeometriesComponent
   ],
   imports: [
     BrowserModule,
