@@ -13,6 +13,7 @@ import { FullscreenAndResizingComponent } from './threejsBasic/fullscreen-and-re
 import { GeometriesComponent } from './threejsBasic/geometries/geometries.component';
 import { DebugUiComponent } from './threejsBasic/debug-ui/debug-ui.component';
 import { TexturesComponent } from './threejsBasic/textures/textures.component';
+import { MaterialsComponent } from './threejsBasic/materials/materials.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TexturesComponent } from './threejsBasic/textures/textures.component';
     FullscreenAndResizingComponent,
     GeometriesComponent,
     DebugUiComponent,
-    TexturesComponent
+    TexturesComponent,
+    MaterialsComponent
   ],
   imports: [
     BrowserModule,
