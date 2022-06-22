@@ -1,6 +1,7 @@
 {
   "name": "threejs",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Puria Rad Jahanbani",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open --port=8912",
