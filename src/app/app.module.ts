@@ -14,6 +14,7 @@ import { GeometriesComponent } from './threejsBasic/geometries/geometries.compon
 import { DebugUiComponent } from './threejsBasic/debug-ui/debug-ui.component';
 import { TexturesComponent } from './threejsBasic/textures/textures.component';
 import { MaterialsComponent } from './threejsBasic/materials/materials.component';
+import { TextComponent } from './threejsBasic/text/text.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MaterialsComponent } from './threejsBasic/materials/materials.component
     GeometriesComponent,
     DebugUiComponent,
     TexturesComponent,
-    MaterialsComponent
+    MaterialsComponent,
+    TextComponent
   ],
   imports: [
     BrowserModule,

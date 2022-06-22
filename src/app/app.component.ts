@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <!-- <header>
       <h1>Angular + Three js</h1>
     </header> -->
-    <app-materials></app-materials> 
+    <app-text></app-text> 
   `,
   styles: [],
 })
