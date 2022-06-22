@@ -9,7 +9,9 @@ import * as THREE from 'three';
 
 @Component({
   selector: 'app-cube',
-  templateUrl: './cube.component.html',
+  template: `
+    <canvas #canvas id="canvas" style=" border: 1px solid black"></canvas>
+  `
 })
 export class CubeComponent implements OnInit, AfterViewInit {
   @ViewChild('canvas') private canvasRef!: ElementRef;
@@ -30,9 +32,9 @@ export class CubeComponent implements OnInit, AfterViewInit {
     this.sizes.width / this.sizes.height,
   );
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   ngAfterViewInit(): void {
     // Object

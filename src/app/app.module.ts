@@ -15,22 +15,24 @@ import { DebugUiComponent } from './threejsBasic/debug-ui/debug-ui.component';
 import { TexturesComponent } from './threejsBasic/textures/textures.component';
 import { MaterialsComponent } from './threejsBasic/materials/materials.component';
 import { TextComponent } from './threejsBasic/text/text.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarComponent,
-    PieComponent,
-    ScatterComponent,
-    CubeComponent,
-    GsapAnimationComponent,
-    CameraComponent,
-    FullscreenAndResizingComponent,
-    GeometriesComponent,
-    DebugUiComponent,
-    TexturesComponent,
-    MaterialsComponent,
-    TextComponent
+    HomeComponent,
+    // BarComponent,
+    // PieComponent,
+    // ScatterComponent,
+    // CubeComponent,
+    // GsapAnimationComponent,
+    // CameraComponent,
+    // FullscreenAndResizingComponent,
+    // GeometriesComponent,
+    // DebugUiComponent,
+    // TexturesComponent,
+    // MaterialsComponent,
+    // TextComponent
   ],
   imports: [
     BrowserModule,
